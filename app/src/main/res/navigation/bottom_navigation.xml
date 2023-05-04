@@ -20,8 +20,8 @@
         android:label="fragment_notification_fragment"
         tools:layout="@layout/fragment_notification_fragment" />
     <fragment
-        android:id="@+id/profile_fragment"
-        android:name="com.example.project_management.prfile_fragment"
+        android:id="@+id/myactivity_fragment"
+        android:name="com.example.project_management.myactivity_fragment"
         android:label="fragment_prfile_fragment"
-        tools:layout="@layout/fragment_prfile_fragment" />
+        tools:layout="@layout/fragment_myactivity_fragment" />
 </navigation>
