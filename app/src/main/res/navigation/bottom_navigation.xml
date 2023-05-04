@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.project_management.home_fragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/fragment_home_fragment" />
+    <fragment
+        android:id="@+id/goal_fragment"
+        android:name="com.example.project_management.goal_fragment"
+        android:label="fragment_goal_fragment"
+        tools:layout="@layout/fragment_goal_fragment" />
+    <fragment
+        android:id="@+id/notification_fragment"
+        android:name="com.example.project_management.notification_fragment"
+        android:label="fragment_notification_fragment"
+        tools:layout="@layout/fragment_notification_fragment" />
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.project_management.prfile_fragment"
+        android:label="fragment_prfile_fragment"
+        tools:layout="@layout/fragment_prfile_fragment" />
+</navigation>
