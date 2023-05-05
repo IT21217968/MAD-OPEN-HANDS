@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/projectcategory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_add"
+    tools:context=".Addproject">
+
+    <TextView
+        android:id="@+id/addproject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="105dp"
+        android:text="Add Project"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Title"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addproject" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Description"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/projectgoal"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Project Goal"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Duration"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectgoal" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Status"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duration" />
+
+    <EditText
+        android:id="@+id/organizer"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Organizer"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Project Category"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/organizer" />
+
+    <EditText
+        android:id="@+id/addbeneficiaries"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/rectangle_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Add Beneficiaries"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <Button
+        android:id="@+id/pro_savebutton"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/rectangle_shape"
+        android:text="Save"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbeneficiaries" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

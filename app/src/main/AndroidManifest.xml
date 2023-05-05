@@ -12,11 +12,14 @@
         android:theme="@style/Theme.Project_Management"
         tools:targetApi="31">
         <activity
-            android:name=".AddProject"
+            android:name=".Updateproject"
             android:exported="false" />
         <activity
-            android:name=".createProject"
-            android:exported="false" />
+            android:name=".Viewproject"
+            android:exported="true" />
+        <activity
+            android:name=".Addproject"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
