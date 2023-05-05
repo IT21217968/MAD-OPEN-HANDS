@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="form_field_test">18dp</dimen>
+    <dimen name="button">23dp</dimen>
+    <dimen name="topic_text">38dp</dimen>
+</resources>
