@@ -3,18 +3,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="save_button">SAVE</string>
+    <string name="view_button">VIEW</string>
     <string name="update_button">UPDATE</string>
     <string name="delete_button">DELETE</string>
-    <string name="title">Title</string>
-    <string name="description">Description</string>
-    <string name="projectgoal">Project Goal</string>
-    <string name="duration">Duration</string>
-    <string name="status">Status</string>
-    <string name="organizer">Organizer</string>
-    <string name="projectcategory">Project Category</string>
-    <string name="addbeneficiaries">Add Beneficiaries</string>
-
-
+    <string name="title">Title: </string>
+    <string name="description">Description: </string>
+    <string name="projectgoal">Project Goal: </string>
+    <string name="duration">Duration: </string>
+    <string name="status">Status: </string>
+    <string name="organizer">Organizer: </string>
+    <string name="projectcategory">Project Category: </string>
+    <string name="addbeneficiaries">Add Beneficiaries: </string>
 
 
 </resources>

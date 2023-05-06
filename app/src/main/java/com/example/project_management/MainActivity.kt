@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
 
 
-        val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference("projectManagement")
+        val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference("Project-Management")
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val navController = findNavController(R.id.fragment)

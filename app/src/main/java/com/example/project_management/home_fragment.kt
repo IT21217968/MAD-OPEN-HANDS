@@ -42,13 +42,32 @@ class home_fragment : Fragment() {
         val view =inflater.inflate(R.layout.fragment_home_fragment, container, false)
 
         // Find the button by ID
-        val myButton = view.findViewById<Button>(R.id.project)
+        val myProjectButton = view.findViewById<Button>(R.id.project)
 
         // Set the click listener
-        myButton.setOnClickListener {
+        myProjectButton.setOnClickListener {
             val intent = Intent(activity, Viewproject::class.java)
             startActivity(intent)
         }
+
+        // Find the button by ID
+        val myDonationNowButton = view.findViewById<Button>(R.id.donation)
+
+        // Set the click listener
+        myDonationNowButton.setOnClickListener {
+            val intent = Intent(activity,Viewdonation::class.java)
+            startActivity(intent)
+        }
+
+        // Find the button by ID
+        val myDonationButton = view.findViewById<Button>(R.id.donate_button)
+
+        // Set the click listener
+        myDonationButton.setOnClickListener {
+            val intent = Intent(activity,AddDonation::class.java)
+            startActivity(intent)
+        }
+
 
         return view
     }

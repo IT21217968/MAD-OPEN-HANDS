@@ -4,174 +4,177 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Updateproject"
-    android:background="@drawable/back_add">
+    tools:context=".AddDonation"
+    android:background="@drawable/back_donation">
 
     <TextView
-        android:id="@+id/updateproject"
+        android:id="@+id/addDonation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="105dp"
-        android:text="Update Project"
+        android:text="Add Donation"
         android:textColor="@color/black"
         android:textSize="@dimen/topic_text"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/up_title"
+        android:id="@+id/name"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
+        android:background="@drawable/donation_rectangle"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="  Title: "
+        android:text="Donor Name: "
         android:textSize="@dimen/form_field_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateproject" />
+        app:layout_constraintTop_toBottomOf="@+id/addDonation" />
 
     <EditText
-        android:id="@+id/up_description"
+        android:id="@+id/nic"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
+        android:background="@drawable/donation_rectangle"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="  Description: "
+        android:text="Donor NIC: "
         android:textSize="@dimen/form_field_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_title" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <EditText
-        android:id="@+id/up_projectgoal"
+        android:id="@+id/mobile"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
+        android:background="@drawable/donation_rectangle"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="  Project Goal: "
+        android:text="Donor Mobile no: "
         android:textSize="@dimen/form_field_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_description" />
+        app:layout_constraintTop_toBottomOf="@+id/nic" />
 
 
     <EditText
-        android:id="@+id/up_duration"
+        android:id="@+id/address"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
+        android:background="@drawable/donation_rectangle"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="  Duration: "
+        android:text="Donor Address: "
         android:textSize="@dimen/form_field_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_projectgoal" />
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
 
     <EditText
-        android:id="@+id/up_status"
+        android:id="@+id/item"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
+        android:background="@drawable/donation_rectangle"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="  Status: "
+        android:text="Donation Item(s): "
         android:textSize="@dimen/form_field_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_duration" />
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
 
     <EditText
-        android:id="@+id/up_organizer"
+        android:id="@+id/quantity"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
+        android:background="@drawable/donation_rectangle"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="  Organizer: "
+        android:text="Quantity: "
         android:textSize="@dimen/form_field_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_status" />
+        app:layout_constraintTop_toBottomOf="@+id/item" />
 
     <EditText
-        android:id="@+id/up_category"
+        android:id="@+id/date"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
+        android:background="@drawable/donation_rectangle"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="  Project Category: "
+        android:inputType="date"
+        android:text="Item submission date: "
         android:textSize="@dimen/form_field_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_organizer" />
-
-    <EditText
-        android:id="@+id/up_addbeneficiaries"
-        android:layout_width="348dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="11dp"
-        android:background="@drawable/rectangle_shape"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="  Add Beneficiaries: "
-        android:textSize="@dimen/form_field_test"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_category" />
+        app:layout_constraintTop_toBottomOf="@+id/quantity" />
 
     <Button
-        android:id="@+id/up_pro_savebutton"
+        android:id="@+id/savebutton"
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginStart="254dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="27dp"
         android:background="@color/darkblue"
         android:textColor="@color/white"
-        android:text="@string/update_button"
+        android:text="@string/save_button"
         android:textSize="@dimen/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/up_addbeneficiaries" />
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <Button
+        android:id="@+id/viewbutton"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@color/darkgreen"
+        android:textColor="@color/white"
+        android:text="@string/view_button"
+        android:textSize="@dimen/button"
+        app:layout_constraintEnd_toStartOf="@+id/savebutton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

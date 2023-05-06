@@ -12,8 +12,17 @@
         android:theme="@style/Theme.Project_Management"
         tools:targetApi="31">
         <activity
-            android:name=".Updateproject"
+            android:name=".UpdateDonation"
             android:exported="false" />
+        <activity
+            android:name=".Viewdonation"
+            android:exported="true" />
+        <activity
+            android:name=".AddDonation"
+            android:exported="true" />
+        <activity
+            android:name=".Updateproject"
+            android:exported="true" />
         <activity
             android:name=".Viewproject"
             android:exported="true" />

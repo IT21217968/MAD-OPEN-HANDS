@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Viewproject"
-    android:background="@drawable/back_view">
+    tools:context=".Viewdonation"
+    android:background="@drawable/back_view_donation">
 
     <TextView
-        android:id="@+id/viewproject"
+        android:id="@+id/viewdonation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="105dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="105dp"
-        android:text="View Projects"
+        android:text="View Donations"
         android:textColor="@color/black"
         android:textSize="@dimen/topic_text"
         android:textStyle="bold"
@@ -22,19 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/addbutton"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="305dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/add_button"
-        android:text="."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/view"
@@ -46,51 +33,36 @@
         android:background="@drawable/rectangle_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewproject" />
+        app:layout_constraintTop_toBottomOf="@+id/viewdonation" />
 
     <TextView
-        android:id="@+id/view_title"
+        android:id="@+id/don_item"
         android:layout_width="375dp"
         android:layout_height="52dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="84dp"
-        android:text="Title - Project 01"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="88dp"
+        android:text="Item - Rice"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewproject" />
+        app:layout_constraintTop_toBottomOf="@+id/viewdonation" />
 
     <TextView
-        android:id="@+id/view_duration"
+        android:id="@+id/don_quantity"
         android:layout_width="375dp"
         android:layout_height="58dp"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="8dp"
-        android:text="Duration - 06 months"
+        android:text="Quantity - 6 kg"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_title" />
-
-    <TextView
-        android:id="@+id/view_org"
-        android:layout_width="375dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="10dp"
-        android:text="Organizer - W.G.Sethmini"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_duration" />
+        app:layout_constraintTop_toBottomOf="@+id/don_item" />
 
     <Button
-        android:id="@+id/update"
+        android:id="@+id/don_update"
         android:layout_width="146dp"
         android:layout_height="55dp"
         android:layout_marginEnd="220dp"
@@ -105,7 +77,7 @@
         app:layout_constraintVertical_bias="0.488" />
 
     <Button
-        android:id="@+id/delete"
+        android:id="@+id/don_delete"
         android:layout_width="146dp"
         android:layout_height="55dp"
         android:layout_marginEnd="20dp"
