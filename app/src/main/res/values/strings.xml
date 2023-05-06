@@ -14,6 +14,7 @@
     <string name="organizer">Organizer: </string>
     <string name="projectcategory">Project Category: </string>
     <string name="addbeneficiaries">Add Beneficiaries: </string>
+    <string name="clear">CLEAR ALL </string>
 
 
 </resources>

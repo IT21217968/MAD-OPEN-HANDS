@@ -56,5 +56,9 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-database-ktx'
 
+    //jUnit testing
+//    testImplementation 'junit:junit:4.13.2'
+//    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.5.21'
+
 
 }

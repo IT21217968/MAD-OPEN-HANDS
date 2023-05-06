@@ -7,5 +7,6 @@ data class DonationModel(
     var donMibile :String?=null,
     var donAddress :String?=null,
     var donItem :String?=null,
+    var donQut : String?=null,
     var donDate :String?=null,
 )
