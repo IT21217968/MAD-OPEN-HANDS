@@ -1,4 +1,4 @@
-package com.example.project_management
+package com.example.project_management.models
 
 data class ProjectModel(
     var proID :String?=null,

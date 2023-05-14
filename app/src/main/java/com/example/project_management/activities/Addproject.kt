@@ -1,4 +1,4 @@
-package com.example.project_management
+package com.example.project_management.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.project_management.models.ProjectModel
+import com.example.project_management.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -21,6 +23,7 @@ class Addproject : AppCompatActivity() {
     private lateinit var etCategory:EditText
     private lateinit var etAddbeneficiaries:EditText
     private lateinit var btnSave:Button
+    private lateinit var btnView:Button
 
     //database references
     private lateinit var dbRef:DatabaseReference
@@ -28,6 +31,12 @@ class Addproject : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addproject)
+
+        var viewButton = findViewById<Button>(R.id.pro_viewbutton)
+        viewButton.setOnClickListener {
+            val Intent = Intent(this, Viewproject::class.java)
+            startActivity(Intent)
+        }
 
         //initialize
         etTitle =findViewById(R.id.title)
@@ -39,6 +48,7 @@ class Addproject : AppCompatActivity() {
         etCategory =findViewById(R.id.category)
         etAddbeneficiaries =findViewById(R.id.addbeneficiaries)
         btnSave=findViewById(R.id.pro_savebutton)
+        btnView= findViewById(R.id.pro_viewbutton)
 
         dbRef =FirebaseDatabase.getInstance().getReference("project-management")
 

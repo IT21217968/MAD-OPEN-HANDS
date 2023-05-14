@@ -1,4 +1,4 @@
-package com.example.project_management
+package com.example.project_management.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.project_management.models.DonationModel
+import com.example.project_management.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -31,7 +33,7 @@ class AddDonation : AppCompatActivity() {
 
         var viewButton = findViewById<Button>(R.id.viewbutton)
         viewButton.setOnClickListener {
-            val Intent = Intent(this,Viewdonation::class.java)
+            val Intent = Intent(this, Viewdonation::class.java)
             startActivity(Intent)
         }
 
@@ -87,7 +89,7 @@ class AddDonation : AppCompatActivity() {
         }
         val donationId = dbRefDon.push().key!!
 
-        val donation =DonationModel(donationId,don_name,don_nic,don_mobile,don_address,don_item,don_qut,don_date)
+        val donation = DonationModel(donationId,don_name,don_nic,don_mobile,don_address,don_item,don_qut,don_date)
 
         dbRefDon.child(donationId ).setValue(donation)
             .addOnCompleteListener{

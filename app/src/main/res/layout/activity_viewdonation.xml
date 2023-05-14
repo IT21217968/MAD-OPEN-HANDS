@@ -4,91 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Viewdonation"
+    tools:context=".activities.Viewdonation"
     android:background="@drawable/back_view_donation">
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDonation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/donation_list" />
+
     <TextView
-        android:id="@+id/viewdonation"
+        android:id="@+id/tvLoadingData1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
+        android:layout_marginStart="127dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="105dp"
+        android:layout_marginEnd="127dp"
         android:text="View Donations"
         android:textColor="@color/black"
         android:textSize="@dimen/topic_text"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="376dp"
-        android:layout_height="227dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="6dp"
-        android:background="@drawable/rectangle_shape"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewdonation" />
-
-    <TextView
-        android:id="@+id/don_item"
-        android:layout_width="375dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="88dp"
-        android:text="Item - Rice"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewdonation" />
-
-    <TextView
-        android:id="@+id/don_quantity"
-        android:layout_width="375dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="8dp"
-        android:text="Quantity - 6 kg"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/don_item" />
-
-    <Button
-        android:id="@+id/don_update"
-        android:layout_width="146dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="220dp"
-        android:background="@color/darkblue"
-        android:text="@string/update_button"
-        android:textColor="@color/white"
-        android:textSize="@dimen/button"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488" />
-
-    <Button
-        android:id="@+id/don_delete"
-        android:layout_width="146dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/darkred"
-        android:text="@string/delete_button"
-        android:textColor="@color/white"
-        android:textSize="@dimen/button"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488" />
+        app:layout_constraintTop_toTopOf="@+id/rvDonation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import com.example.project_management.activities.AddDonation
+import com.example.project_management.activities.Addproject
+import com.example.project_management.activities.Viewdonation
+import com.example.project_management.activities.Viewproject
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -46,7 +50,7 @@ class home_fragment : Fragment() {
 
         // Set the click listener
         myProjectButton.setOnClickListener {
-            val intent = Intent(activity, Viewproject::class.java)
+            val intent = Intent(activity, Addproject::class.java)
             startActivity(intent)
         }
 
@@ -55,7 +59,7 @@ class home_fragment : Fragment() {
 
         // Set the click listener
         myDonationNowButton.setOnClickListener {
-            val intent = Intent(activity,Viewdonation::class.java)
+            val intent = Intent(activity, Viewdonation::class.java)
             startActivity(intent)
         }
 
@@ -64,7 +68,7 @@ class home_fragment : Fragment() {
 
         // Set the click listener
         myDonationButton.setOnClickListener {
-            val intent = Intent(activity,AddDonation::class.java)
+            val intent = Intent(activity, AddDonation::class.java)
             startActivity(intent)
         }
 
@@ -72,7 +76,7 @@ class home_fragment : Fragment() {
         return view
     }
     fun onMyButtonClick(view: View) {
-        val intent = Intent(activity,Viewproject::class.java)
+        val intent = Intent(activity, Viewproject::class.java)
         startActivity(intent)
     }
     companion object {
